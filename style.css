@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image:url('img/sfondo.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+}
+.profile-area {
+    margin:40px 0 0 0;               /* sopra destra sotto sinistra*/
+    background-color: #093f40; 
+    width: 100%;               /* This makes the rectangle stretch across the screen */
+    padding: 15px;             /* This gives space inside the rectangle so it's tall */
+    display: flex;             /* This aligns your images/text in a row */
+    align-items: center;       /* This centers everything vertically */
+    gap: 20px;                 /* This puts a little gap between your images and text */
+    color: rgb(234, 174, 174);
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+.contatti-area{
+    margin:40px 0 0 0;
+    background-color: #093f40;
+       color: rgb(234, 174, 174);
+       flex-wrap: wrap;
+       justify-content: center;
+       display: flex;
+       max-width: 100%;
+       align-items: center;
+       gap: 20px;
+}
+
+.contatti-area div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.contatti-area img{
+    width: 35px;               
+    height: 35px;
+    object-fit: contain;
+}
+.whatsapp{
+    transform: scale(1.4);
+}
+.linkedin{
+    transform: scale(2.3);
+}
+.instagram{
+    transform: scale(1.4);
+}
+.tiktok{
+    transform: scale(2.7);
+}
+.gmail{
+    transform: scale(3);
+}
