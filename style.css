@@ -6,19 +6,51 @@ body{
     background-size: cover; 
     background-position: center;
     background-attachment: fixed; 
+    cursor: url('https://cdn.cursors-4u.net/previews/amber-5c9cde80-32.webp') 16 16, auto !important;
 }
+
 .profile-area {
     margin:40px 0 0 0;               /* sopra destra sotto sinistra*/
     background-color: #093f40; 
     width: 100%;               /* This makes the rectangle stretch across the screen */
     padding: 15px;             /* This gives space inside the rectangle so it's tall */
     display: flex;             /* This aligns your images/text in a row */
-    align-items: center;       /* This centers everything vertically */
+    align-items:center;
     gap: 20px;                 /* This puts a little gap between your images and text */
-    color: rgb(234, 174, 174);
-    justify-content: space-between;
+    color: rgb(250, 220, 100);
+    justify-content: space-around;
     box-sizing: border-box;
-    flex-wrap: nowrap;
+    font-family: 'Cinzel', serif;
+}
+.profile-area img{
+    max-width: 100%;
+    height: auto;
+    height: 17em;
+}
+.leo {
+    text-align: center;
+}
+.leo img{
+    height: 4em;
+}
+.immagini-portfolio {
+    /* Crea 3 colonne fluide che diventano 2 o 1 sugli schermi piccoli */
+    columns: 3 15em; 
+    column-gap: 1.5em;
+    padding: 2em;
+}
+
+.immagini-portfolio img {
+    width: 100%;        /* Occupa tutta la larghezza della colonna */
+    height: auto;       /* L'ALTEZZA È NORMALE E LIBERA! */
+    display: block;
+    margin-bottom: 1.5em; /* Spazio verticale tra i disegni */
+    border-radius: 6px; /* Opzionale */
+    transition: transform 0.2s ease;
+}
+
+.immagini-portfolio img:hover {
+    transform: scale(1.02); /* Leggerissimo zoom al passaggio del mouse */
 }
 .contatti-area{
     margin:40px 0 0 0;
