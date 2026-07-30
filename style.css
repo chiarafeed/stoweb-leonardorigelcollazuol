@@ -33,11 +33,20 @@ body{
 .leo img{
     height: 4em;
 }
+@media (max-width: 768px) {
+  .immagini-portfolio {
+    columns: 2; 
+    column-gap: 1.5em;
+    padding: 2em;
+    column-fill: balance;
+}  
+}
 .immagini-portfolio {
     /* Crea 3 colonne fluide che diventano 2 o 1 sugli schermi piccoli */
     columns: 3 15em; 
     column-gap: 1.5em;
     padding: 2em;
+    column-fill: balance;
 }
 
 .immagini-portfolio img {
