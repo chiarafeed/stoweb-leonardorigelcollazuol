@@ -33,22 +33,18 @@ body{
 .leo img{
     height: 4em;
 }
+.immagini-portfolio {
+    columns: 3 15em; 
+    column-gap: 1.5em;
+    padding: 2em;
+}
 @media (max-width: 768px) {
   .immagini-portfolio {
     columns: 2; 
     column-gap: 1.5em;
-    padding: 2em;
-    column-fill: balance;
-}  
+    padding: 1em;
+    }  
 }
-.immagini-portfolio {
-    /* Crea 3 colonne fluide che diventano 2 o 1 sugli schermi piccoli */
-    columns: 3 15em; 
-    column-gap: 1.5em;
-    padding: 2em;
-    column-fill: balance;
-}
-
 .immagini-portfolio img {
     width: 100%;        /* Occupa tutta la larghezza della colonna */
     height: auto;       /* L'ALTEZZA È NORMALE E LIBERA! */
@@ -97,4 +93,36 @@ body{
 }
 .gmail{
     transform: scale(3);
+}
+
+/*ingrandimento immagini*/
+.lightbox {
+    display: none; /* Inizialmente nascosto */
+    position: fixed;
+    z-index: 9999; /* Sopra a tutto il resto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo scuro semitrasparente */
+    overflow: auto; /* Permette lo scroll se l'immagine è troppo grande */
+    
+    /* Centra l'immagine */
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain; /* Mantiene le proporzioni senza tagliare */
+    border-radius: 8px; /* Un tocco di classe */
+}
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer; /* Un cursore per mostrare che è cliccabile */
 }
